@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            @calvinn.31 - 71230988 - Personal Web Page
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <link href="style.css" rel="stylesheet">
+        <header>
+            <h2> Calvin Personal Web Page </h2>
+        </header>
+        <section>
+            <p>
+                <b><h2>About Me</h2></b>
+            </p>
+        </section>
+        <section id="foto">
+                <img alt="About Me" src = "WIN_20231101_19_51_24_Pro.jpg" width = "400" style="display:block; margin:auto;">   
+        </section>
+        <hr>
+            <section id="tentang-saya">
+                <p><h3>Calvin Putra Susanto</h3></p>
+                <p><i><a href="https://www.instagram.com/calvinn.31/" style="color: black">
+                @calvinn.31</a></i></p>
+                <p>Magelang, Jawa Tengah, Indonesia</p>
+                <p>Duta Wacana Christian University</p>
+            </section>
+        <hr>
+        <section id="skillset">
+            <p>
+                <b>Skillset</b>
+            </p>
+        </section>
+        <section class="ketrampilan">
+           
+                <ul>
+                 <li> HTML</li>
+                 <li> CSS </li>
+                 <li> JavaScript </li>
+                 <li> C </li>
+                 <li> Python </li>
+                </ul>
+        </section>
+        <button id="TombolGantiWarna">
+            Ganti Warna 
+        </button>
+        <footer>
+            <p> Thank you for visiting my personal web page </p>
+            <p>@calvinn.31</p>
+         </footer>
+         
+         <script>
+            const bodyElement = document.body;
+    
+            function gantiWarnaRandom() {
+                const warnaList = ["red", "green", "blue", "white"]
+                const randomIndex = Math.floor(Math.random() * warnaList.length);
+                const warnaRandom = warnaList[randomIndex];
+                bodyElement.style.backgroundColor = warnaRandom;
+            }
+    
+            const tombolGantiWarna = document.getElementById("TombolGantiWarna")
+            tombolGantiWarna.addEventListener("click", gantiWarnaRandom);
+        </script>
+
+    </body>
+</html>
